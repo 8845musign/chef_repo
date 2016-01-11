@@ -239,8 +239,8 @@ Include conf.d/*.conf
 #  when the value of (unsigned)Group is above 60000; 
 #  don't use Group #-1 on these systems!
 #
-User apache
-Group apache
+User vagrant
+Group vagrant
 
 ### Section 2: 'Main' server configuration
 #
@@ -317,6 +317,7 @@ DocumentRoot "/vagrant/html"
 <Directory "/vagrant/html">
   EnableMMAP Off
   EnableSendfile Off
+
 #
 # Possible values for the Options directive are "None", "All",
 # or any combination of:
@@ -336,7 +337,7 @@ DocumentRoot "/vagrant/html"
 # It can be "All", "None", or any combination of the keywords:
 #   Options FileInfo AuthConfig Limit
 #
-    AllowOverride All
+    AllowOverride None
 
 #
 # Controls who can get stuff from this server.
@@ -631,7 +632,7 @@ AddIcon /icons/dvi.gif .dvi
 AddIcon /icons/uuencoded.gif .uu
 AddIcon /icons/script.gif .conf .sh .shar .csh .ksh .tcl
 AddIcon /icons/tex.gif .tex
-AddIcon /icons/bomb.gif core
+AddIcon /icons/bomb.gif /core
 
 AddIcon /icons/back.gif ..
 AddIcon /icons/hand.right.gif README
