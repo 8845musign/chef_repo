@@ -40,3 +40,11 @@ yum_repository 'remi' do
   gpgcheck true
   gpgkey 'http://rpms.famillecollet.com/RPM-GPG-KEY-remi'
 end
+
+yum_repository 'mysql-5.5-community' do
+  baseurl 'http://repo.mysql.com/yum/mysql-5.5-community/el/6/$basearch/'
+  description 'Les RPM de remi pour Enterprise Linux 6 - $basearch'
+  enabled true
+  gpgcheck true
+  gpgkey 'https://raw.githubusercontent.com/chef-cookbooks/yum-mysql-community/master/files/default/mysql_pubkey.asc'
+end
