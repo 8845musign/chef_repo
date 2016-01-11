@@ -1,6 +1,7 @@
 {
   "run_list": [
     "yum",
-    "selinux::disabled"
+    "selinux::disabled",
+    "iptables"
   ]
 }
