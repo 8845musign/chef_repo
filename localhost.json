@@ -3,6 +3,7 @@
     "yum",
     "selinux::disabled",
     "iptables",
-    "apache"
+    "apache",
+    "mysql"
   ]
 }
