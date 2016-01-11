@@ -24,3 +24,19 @@ yum_globalconfig '/etc/yum.conf' do
 
   action :create
 end
+
+yum_repository 'epel' do
+    mirrorlist 'http://mirrors.fedoraproject.org/mirrorlist?repo=epel-6&arch=$basearch'
+    description 'Extra Packages for Enterprise Linux 6 - $basearch'
+    enabled true
+    gpgcheck true
+    gpgkey 'http://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-6'
+end
+
+yum_repository 'remi' do
+  baseurl 'http://rpms.famillecollet.com/enterprise/6/remi/$basearch/'
+  description 'Les RPM de remi pour Enterprise Linux 6 - $basearch'
+  enabled true
+  gpgcheck true
+  gpgkey 'http://rpms.famillecollet.com/RPM-GPG-KEY-remi'
+end
