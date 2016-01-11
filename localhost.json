@@ -2,6 +2,7 @@
   "run_list": [
     "yum",
     "selinux::disabled",
-    "iptables"
+    "iptables",
+    "apache"
   ]
 }
