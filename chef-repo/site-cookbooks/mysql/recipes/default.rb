@@ -7,7 +7,7 @@
 # All rights reserved - Do Not Redistribute
 #
 #
-%w{mysql-community-client mysql-community-devel mysql-community-server}.each do |pkg|
+%w{mysql-client mysql-devel mysql-server}.each do |pkg|
   package pkg do
     action :install
   end
