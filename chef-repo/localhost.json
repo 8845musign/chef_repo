@@ -5,6 +5,8 @@
     "selinux::disabled",
     "iptables",
     "apache",
-    "mysql"
+    "mysql",
+    "libmcrypt",
+    "php"
   ]
 }
