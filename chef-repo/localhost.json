@@ -1,6 +1,7 @@
 {
   "run_list": [
     "yum-remi",
+    "yum-epel",
     "selinux::disabled",
     "iptables",
     "apache",
