@@ -4,6 +4,7 @@ PHP開発環境
 
 ## 構築環境
 
+* CentOS6.7
 * PHP 5.4
 * MySQL 5.5
 
