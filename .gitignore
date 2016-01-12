@@ -8,4 +8,7 @@
 
 .vagrant/
 
+html/
+!html/.gitkeep
+
 .DS_Store
