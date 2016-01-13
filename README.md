@@ -31,7 +31,7 @@ vagrant up
 
 しばらくすると環境が構築される
 
-`192.168.33.10` にアクセスしてApacheの画面が表示されるはず
+自動的にサーバーが起動するので `http://192.168.33.10/` にアクセスしてApacheの画面が表示されるはず
 
 ### 構築途中でエラーになった場合
 
@@ -43,6 +43,10 @@ su
 cd /vagrant/chef-repo
 chef-solo -c solo.rb -j localhost.json
 ```
+
+## 起動と終了
+
+それぞれ `start.sh` と `stop.sh` を実行
 
 ## ドキュメントルート
 
