@@ -46,7 +46,19 @@ chef-solo -c solo.rb -j localhost.json
 
 ## 起動と終了
 
-それぞれ `start.sh` と `stop.sh` を実行
+ディレクトリでターミナルもしくはコマンドプロンプロトを開き以下のコマンドを実行
+
+**起動**
+
+```
+vagrant up
+```
+
+**終了**
+
+```
+vagrant halt
+```
 
 ## ドキュメントルート
 
